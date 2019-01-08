@@ -9,3 +9,8 @@ sudo apt-get install jenkins -y
 
 sudo systemctl start jenkins
 sudo systemctl status jenkins
+
+sudo ufw allow 8080
+sudo ufw status
+
+echo if firewall inactive use: 1) sudo ufw allow openSSH & 2) sudo ufw enable
