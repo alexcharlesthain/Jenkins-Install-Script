@@ -13,4 +13,9 @@ sudo systemctl status jenkins
 sudo ufw allow 8080
 sudo ufw status
 
-echo if firewall inactive use: 1) sudo ufw allow openSSH & 2) sudo ufw enable
+sudo ufw allow OpenSSH
+sudo ufw enable
+
+sudo ufw status
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
